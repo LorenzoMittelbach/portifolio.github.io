@@ -1,0 +1,75 @@
+.introducao {
+  max-width: 1200px;
+  padding: 40px 140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 70px;
+}
+.introducao-texto {
+  display: grid;
+  justify-content: start;
+  align-content: center;
+  gap: 30px;
+}
+.titulo {
+  position: relative;
+  font-size: 4.5rem;
+  line-height: 1.2;
+  align-self: center;
+  justify-self: start;
+  font-family: "Source serif Pro";
+}
+.titulo::before {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 128px;
+  width: 128px;
+  left: -39px;
+  top: -29px;
+  background: url("/portifolio/img/deco.svg") no-repeat center;
+  z-index: -1;
+}
+.introducao-texto p {
+  font-size: 1.5;
+  color: #525252;
+}
+.foto img {
+  max-height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+  .titulo {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+  }
+  .titulo {
+    font-size: 2rem;
+  }
+  .titulo::before {
+    width: 30px;
+    height: 10px;
+    left: 0px;
+    top: -10px;
+  }
+}
+@media (max-width: 600px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    padding: 10px 35px;
+  }
+  .foto {
+    display: none;
+  }
+  .introducao-texto {
+    justify-self: center;
+  }
+}

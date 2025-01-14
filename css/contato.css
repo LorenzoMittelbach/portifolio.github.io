@@ -1,0 +1,67 @@
+.contato {
+  background: #000;
+}
+.contato-container {
+  position: relative;
+  max-width: 1200px;
+  padding: 140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 140px;
+  align-items: center;
+}
+.contato-container p {
+  color: #ccc;
+  font-size: 1.5rem;
+}
+
+.contatos {
+  display: grid;
+  font-size: 1, 5rem;
+  line-height: 1.1;
+  gap: 30px;
+  color: #fff;
+}
+.contato-container::before {
+  display: block;
+  position: absolute;
+  content: "";
+  background: url("/portifolio/img/deco.svg") no-repeat center;
+  width: 128px;
+  height: 128px;
+  top: -64px;
+  left: 128px;
+  background-size: cover;
+}
+@media (max-width: 1000px) {
+  .contato-container {
+    padding: 70px 140px;
+  }
+  .contato-container::before {
+    width: 96px;
+    height: 96px;
+    top: -48px;
+  }
+  .contato-container p {
+    font-size: 1.25rem;
+  }
+  .contatos {
+    gap: 15px;
+    align-self: center;
+  }
+}
+@media (max-width: 800px) {
+  .contato-container::before {
+    width: 15px;
+    height: 30px;
+    top: -8px;
+    left: 140px;
+
+    background-size: inherit;
+  }
+  .contato-container {
+    gap: 30px;
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,122 @@
+.formacao {
+  background: #141414;
+}
+.formacao-container {
+  max-width: 1200px;
+  padding: 40px 140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 70px;
+}
+.formacao-container h1 {
+  font-family: "Source Serif Pro";
+  font-size: 7.8rem;
+  text-transform: uppercase;
+  color: #000;
+  line-height: 1;
+}
+.formacao-conteudo {
+  display: grid;
+  place-content: start;
+  gap: 40px;
+}
+.formacao-conteudo strong {
+  color: #fff;
+  font-family: "Source Serif Pro";
+}
+.formacao-conteudo p {
+  color: #a3a3a3;
+  font-size: 1.125rem;
+  line-height: 1.3;
+}
+.formacao-conteudo h2 {
+  font-size: 0.825rem;
+  text-transform: uppercase;
+  color: #8f8f8f;
+}
+.formacao-conteudo .cursos-titulo {
+  position: relative;
+  line-height: 1.3;
+}
+.formacao-conteudo .cursos-titulo::before {
+  content: "";
+  position: absolute;
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  left: -36px;
+  bottom: 0px;
+  background: url(/portifolio/img/Cursos.svg) no-repeat;
+}
+.formacao-conteudo .idiomas-titulo {
+  position: relative;
+  line-height: 1.3;
+}
+.formacao-conteudo .idiomas-titulo::before {
+  content: "";
+  position: absolute;
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  left: -36px;
+  bottom: 0px;
+  background: url(/portifolio/img/Idiomas.svg) no-repeat;
+}
+.cursos,
+.idiomas p,
+h3 {
+  font-size: 1.125rem;
+}
+.cursos {
+  display: grid;
+  gap: 30px;
+}
+.cursos-itens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  gap: 20px;
+}
+.cursos-itens p {
+  justify-self: end;
+}
+.idiomas {
+  display: grid;
+  gap: 30px;
+}
+.idiomas-itens {
+  display: grid;
+  gap: 20px;
+}
+@media (max-width: 1000px) {
+  .formacao-container h1 {
+    font-size: 6rem;
+  }
+  .projeto {
+    margin: 0px;
+  }
+  .formacao-conteudo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+}
+
+@media (max-width: 800px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .formacao-container br {
+    display: none;
+  }
+  .formacao-container h1 {
+    font-size: 5rem;
+  }
+  .competencias {
+    padding: 10px;
+  }
+}

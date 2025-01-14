@@ -1,0 +1,11 @@
+.rodape-container {
+  max-width: 1200px;
+  padding: 40px 140px;
+  margin: 0 auto;
+}
+.rodape {
+  background: #000;
+}
+.rodape-container p {
+  color: #8f8f8f;
+}

@@ -28,7 +28,7 @@
   width: 128px;
   left: -39px;
   top: -29px;
-  background: url("/portifolio/img/deco.svg") no-repeat center;
+  background: url("/img/deco.svg") no-repeat center;
   z-index: -1;
 }
 .introducao-texto p {

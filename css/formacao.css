@@ -48,7 +48,7 @@
   height: 24px;
   left: -36px;
   bottom: 0px;
-  background: url(/portifolio/img/Cursos.svg) no-repeat;
+  background: url(/img/Cursos.svg) no-repeat;
 }
 .formacao-conteudo .idiomas-titulo {
   position: relative;
@@ -63,7 +63,7 @@
   height: 24px;
   left: -36px;
   bottom: 0px;
-  background: url(/portifolio/img/Idiomas.svg) no-repeat;
+  background: url(/img/Idiomas.svg) no-repeat;
 }
 .cursos,
 .idiomas p,
